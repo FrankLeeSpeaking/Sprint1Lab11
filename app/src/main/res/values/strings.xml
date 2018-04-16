@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sprint 1 Lab 1-1</string>
+    <string name="logo">MCC Logo</string>
+    <string name="user_login">USER NAME</string>
+    <string name="user_password">PASSWORD</string>
+    <string name="login_button">LOGIN</string>
+    <string name="loginSuccess">LOGIN SUCCESSFUL</string>
+    <string name="logged_in">Dry Run Login Successful</string>
+</resources>
