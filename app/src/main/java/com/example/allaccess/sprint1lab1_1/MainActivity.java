@@ -1,5 +1,6 @@
 package com.example.allaccess.sprint1lab1_1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -29,11 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Page2.class));
 
-                if (userName.getText().toString().equals(realName))
+/*                if (userName.getText().toString().equals(realName))
                 {
                     if (userPassword.getText().toString().equalsIgnoreCase(realPassword)) {
-                        logInSuccess.setText(goodLogin);
+                        startActivity(new Intent(getApplicationContext(), Page2.class));
                     }
                     else{
                         logInSuccess.setText(null);
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     logInSuccess.setText(null);
                     Toast.makeText(MainActivity.this, "unknown user", Toast.LENGTH_LONG).show();
-                }
+                }*/
 
             }//------ END onClick
         }); // ------- END setOnClickListener
