@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //--------assign variables to user input
+        //--------assign varia to user input
         final EditText userName = findViewById(R.id.txtUserName);
         final EditText userPassword = findViewById(R.id.txtPassword);
         final TextView logInSuccess = findViewById(R.id.txtSuccess);

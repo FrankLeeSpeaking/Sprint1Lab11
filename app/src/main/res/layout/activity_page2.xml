@@ -32,8 +32,12 @@
         app:layout_constraintEnd_toStartOf="@+id/txtFirst"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        android:nextFocusDown="@+id/txtFirst"/>
 
+    <!--
+    android:selectAllOnFocus="false"
+    -->
     <EditText
         android:id="@+id/txtFirst"
         android:layout_width="wrap_content"
@@ -46,7 +50,7 @@
         android:ems="10"
         android:hint="@string/first_name"
         android:inputType="textPersonName"
-        android:selectAllOnFocus="false"
+
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtLast"
